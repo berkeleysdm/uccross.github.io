@@ -60,8 +60,14 @@ Table of Contents:
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
       * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
+   * [Apache AsterixDB](#apache-asterixdb)
+      * [Geospatial Data Science on AsterixDB](#geospatial-data-science-on-asterixdb)
+         * [The goals of this project are:](#the-goals-of-this-project-are)
+         * [Machine Learning Integration](#machine-learning-integration)
+   * [FasTensor](#fastensor)
+      * [Continuous Integration](#continuous-integration)
 
-<!-- Added by: runner, at: Thu Dec  2 03:32:08 UTC 2021 -->
+<!-- Added by: runner, at: Wed Dec  8 15:38:27 UTC 2021 -->
 
 <!--te-->
 
@@ -670,3 +676,51 @@ For [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD)- Automatic code
   * **Mentor**: Vitor Bandeira <mailto:vvbandeira@eng.ucsd.edu>, Indira Iyer Almeida <mailto:dralabeing@openroad.tools>
 
 The [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) project and several of it's repositories see a good amount of useful discussion in it’s issues and slack channels. Implement an AI analytics bot that picks relevant discussions and classifies/records them into useful documentation and actionable issues.
+
+## Apache AsterixDB
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  Apache AsterixDB&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project Apache AsterixDB.)
+
+
+AsterixDB is an open source parallel big-data management system [http://asterixdb.apache.org/]. AsterixDB is a well-established Apache project that has been active in research for more than 10 years. It provides a flexible data model that supports modern NoSQL applications with a powerful query processor that can scale to billions of records and terabytes of data. Users can interact with AsterixDB through a power and easy to use declarative query language, SQL++, which provides a rich set of data types including timestamps, time intervals, text, and geospatial, in addition to traditional numerical and Boolean data types.
+
+### Geospatial Data Science on AsterixDB
+
+- *Topics*: Data science, SQL++, documentation
+- *Skills*: Writing, Spreadsheets
+- *Difficulty*: Medium
+- *Mentors*: [Ahmed Eldawy](mailto:eldawy@ucr.edu), [Akil Sevim](asevi006@ucr.edu)
+
+Build a data science project using AsterixDB that analyzes geospatial data among other dimensions. Use [Chicago Crimes](https://star.cs.ucr.edu/?Chicago%20Crimes#center=41.8313,-87.6830&zoom=11) as the main dataset and combine with other datasets including [points of interests](https://star.cs.ucr.edu/?osm21/pois#center=41.8313,-87.6830&zoom=11) [ZIP Code boundaries](https://star.cs.ucr.edu/?TIGER2018/ZCTA5#center=41.8313,-87.6830&zoom=11). During this project, we will answer interesting questions about the data and visualize the results such as:
+
+- What is the most common crime type in a specific date or over the weekends?
+- Where do most of the arrests happen?
+- How are the crime rates change over time for different regions?
+
+#### The goals of this project are:
+
+- Understand how to build a scalable data science project using AsterixDB.
+- Translate common questions to SQL queries and run them on large data.
+- Learn how to visualize the results of queries and present them.
+- Write detailed documentation about the process of building a data science application in AsterixDB.
+- Improve the documentation of AsterixDB while working in the project to improve the experience for future users.
+
+#### Machine Learning Integration
+As a bonus task, and depending on the progress of the project, we can explore the integration of machine learning with AsterixDB through Python UDFs. We will utilize the AsterixDB Python integration through [user-defined functions](https://asterixdb.apache.org/docs/0.9.7/udf.html) to connect AsterixDB backend with [scikit-learn](https://scikit-learn.org/stable/index.html) to build some unsupervised and supervised models for the data. For example, we can cluster the crimes based on their location and other attributes to find interesting patterns or hotspots.
+
+## FasTensor
+💝[Interested in sponsoring?](mailto:cross-info@ucsc.edu?subject=OSRE22: Sponsoring  FasTensor&body=Dear OSRE22 Staff, I am interested in sponsoring summer student internships at $9,500 per student for the project FasTensor.)
+
+[FasTensor](https://sdm.lbl.gov/fastensor/) is a parallel execution engine for user-defined functions on multidimensional arrays.  The user-defined functions follow the stencil metaphor used for scientific computing and is effective for expressing a wide range of computations for data analyses, including common aggregation operations from database management systems and advanced machine learning pipelines.  FasTensor execution engine exploits the structural-locality in the multidimensional arrays to automate data management operations such as file I/O, data partitioning, communication, parallel execution, and so on.
+
+### Continuous Integration
+
+  * **Topics**: `Data Management`, `Analytics`
+  * **Skills**:   C++, github
+  * **Difficulty**: Easy
+  * **Mentor**: [John Wu](mailto:kwu@lbl.gov), [Bin Dong](mailto:dbin@lbl.gov), [Suren Byna](mailto:sbyna@lbl.gov)
+ 
+- Develop a test suite for the public API of FasTensor
+- Automate execution of the test suite
+- Document the continuous integration process
+- Develop performance testing suite
+

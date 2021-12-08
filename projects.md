@@ -60,8 +60,14 @@ Table of Contents:
       * [Enhance GUI features](#enhance-gui-features)
       * [Automate OpenDB code Generation](#automate-opendb-code-generation)
       * [Implement an NLP based AI bot](#implement-an-nlp-based-ai-bot)
+   * [Apache AsterixDB](#apache-asterixdb)
+      * [Geospatial Data Science on AsterixDB](#geospatial-data-science-on-asterixdb)
+         * [The goals of this project are:](#the-goals-of-this-project-are)
+         * [Machine Learning Integration](#machine-learning-integration)
+   * [FasTensor](#fastensor)
+      * [Continuous Integration](#continuous-integration)
 
-<!-- Added by: runner, at: Thu Dec  2 03:32:08 UTC 2021 -->
+<!-- Added by: runner, at: Wed Dec  8 15:38:27 UTC 2021 -->
 
 <!--te-->
 
